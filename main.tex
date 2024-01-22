@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Urvashi
+% Based on: https://github.com/jakegut/resume (which was based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT --------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+\usepackage{changepage}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  \vspace{-4pt}
+  \color{gray}
+  \item
+\end{flushright}
+
+\vspace{-7pt}
+
+\begin{center}
+    \textbf{\Huge \scshape URVASHI BHARGAVA} \\ \vspace{8pt}
+    \small 
+    \faIcon{phone}
+    \href{tel:+919550064000}{+919550064000}
+    \faIcon{code}
+    \href{https://urvashiportfolio.com/}
+    {\underline{urvashiportfolio.com}} $  $
+    \faIcon{github}
+    \href{https://github.com/urvashii-b}
+    {\underline{urvashii-b}} $  $
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/urvashi-bhargava-b66100262/}{\underline{urvashi}} $  $
+    \faIcon{trophy}
+    \href{https://leetcode.com/urvashiiibh/}{\underline{urvashiiibh}} $  $
+    \faIcon{envelope}
+    \href{mailto:urvashi.officialcse@gmail.com}
+    {\underline{urvashi.officialcse@gmail.com}} $  $
+\end{center}
+
+    
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart  
+    \resumeSubheading
+      {PES University - Bengaluru, India}{December 2021 - 2025}
+      {Bachelor of Technology: Computer Science}{Current CGPA: 8.78/10}
+    \resumeSubheading
+      {Delhi Public School - Hyderabad, India}{August 2016 - May 2019}
+      {High School}{X (CBSE): 96.4}     
+    \vspace{3pt}
+  \resumeSubHeadingListEnd
+    
+% -------------------- SKILLS --------------------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, R, HTML/CSS, ReactJS} \\
+     \textbf{Databases}{: MySQL, MongoDB, Neo4j} \\    
+     \textbf{Libraries}{: Keras, TensorFlow, NumPy, scikit-learn}  \\
+     \textbf{Strengths}{: Data Analytics, Machine Intelligence, Gen AI, LLMS, Prompt Engineering} \\
+    }}
+ \end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{Music Recommendation System - Emotify} $|$ {Arithemania-2.0} $|$ 
+        \href{https://github.com/urvashii-b/Emotify}{\color{blue}\faIcon{github}}}{17-18 June 2023}
+        \resumeItemListStart
+            \resumeItem{Crafted Emotify, a music recommendation system, merging Spotify integration with real-time emotion detection.}
+            \resumeItem{Implemented a proprietary CNN model, enabling detailed analysis of facial expressions. Aligning with users' emotional states, it enhances the music listening experience remarkably.}   
+        \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{Student Database Management System - StudentHub} $|$ \href{https://github.com/urvashii-b/StudentHub}{\color{blue}\faIcon{github}}}{September 2023 – Nov 2023}
+        \resumeItemListStart
+            \resumeItem{Developed StudentHub using Flask and MySQL to proficiently organize and manage diverse student data.}
+            \resumeItem{Created a user-friendly website interface, serving as a reliable solution for educational institutions.} 
+            \resumeItem{Incorporated user authentication alongside advanced search and filter capabilities} 
+        \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{AR/AI Fashion Store - ArBotique} $|$ {Kodikon 3.0} $|$ {Collaborative project} $|$ \href{https://github.com/urvashii-b/11_ArBotique}{\color{blue}\faIcon{github}}}
+        {4-5 November 2023}
+        \resumeItemListStart
+            \resumeItem{Implemented AR technology for seamless virtual try-ons, enabling customers to visualize apparel before purchase, resulting in a more informed shopping experience.}
+            \resumeItem{Innovatively integrated DALL-E by OpenAI, utilizing TNN model for personalized clothing customization.}     
+        \resumeItemListEnd  
+    \resumeSubHeadingListEnd
+
+% -------------------- RESEARCH WORK --------------------
+\section{Research Work}
+\begin{adjustwidth}{0.15in}{0pt}
+    \textbf{CounselAI: }{Engaged in research on career counseling using LLMS, actively developing a multilingual Language Model tailored for career guidance (domain-specific LLM), while also preventing jailbreak.}
+\end{adjustwidth}
+
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Synthax Hackathon} $|$ \footnotesize\emph{Mentor}}{27-28 January 2024}
+          \resumeItemListStart
+                \resumeItem{Gained valuable mentoring experience after being chosen as a mentor at the Harvest International School.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Joy Store India} $|$ {\footnotesize\emph{Graphic Designer}}}{May 2023 - August 2023}
+        \resumeProjectHeading
+            {\textbf{HackerSpace- PES University} $|$ {\footnotesize\emph{Design Team}}}{March 2022 - June 2023}
+   \resumeSubHeadingListEnd 
+
+% -------------------- ACHIEVEMENTS --------------------
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{  
+     \textbf{MRD Scholarship: }\href{https://drive.google.com/file/d/165MKp1oXSgvJpZoC17rnhxoq5BZP28Va/view?usp=sharing}{\underline{Top 20\%}{ of the students in the University}} \\
+     \textbf{Top 10 in Kodikon 3.0: }{Led the team to an impressive }\href{https://drive.google.com/file/d/1zE2c2vQAUzSWOnhfeUJ2MOQWz7Egtn11/view?usp=sharing}{\underline{top-10}}{ finish at the national-level hackathon.} \\
+     \textbf{Top 30 in Smart India Hackathon}{: Led the team to secure a prestigious position representing the university.} \\ 
+    }}
+ \end{itemize}
+
+% -------------------- CERIFICATIONS --------------------
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Database Structures and Management with MySQL:}{ \href{https://drive.google.com/file/d/1yk1cgDVw4zl7LSJ7ZCwm0mTG6D1OUiyl/view?usp=sharing}{\color{blue}\underline{Meta}} }\\
+    \textbf{Jira Work Management Fundamentals Badge:}{ \href{https://university.atlassian.com/student/award/YUXGUbPbH1wfKhPqoE3UvJ1E}{\color{blue}\underline{Atlassian}}} \\ 
+    \textbf{A Beginner's Guide to Linux Kernel Development (LFD103):}{ \href{https://drive.google.com/file/d/1Rc3an_g4eF2UVKEvh6tCYHMYul08s1O3/view?usp=sharing}{\color{blue}\underline{The Linux Foundation}}} \\
+    \textbf{Centre for Innovation and Entrepreneurship -  Level 1: }\href{https://drive.google.com/file/d/1TqpBAXJ2q6YzqMNAOdY6SA-zIz7lrH5G/view?usp=sharing}{\color{blue}\underline{PES University}} \\
+    \textbf{Getting Started with Compute (Lab): }{\color{blue}\underline{AWS Educate}} \\
+    }}
+ \end{itemize}
+\end{document}
